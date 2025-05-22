@@ -1,0 +1,86 @@
+\ifx\pdfoutput\undefined
+\documentclass[a4paper]{book}
+\else
+\documentclass[pdftex,a4paper]{book}
+\usepackage{thumbpdf}
+\usepackage[pdftex,bookmarks,colorlinks=true]{hyperref}
+
+\def\pdfBorderAttrs{/Border [0 0 0] }
+\fi
+% ---------------------------------------------------------------------------------------------
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[draft]{pdfdraftcopy}
+
+% ---------------------------------------------------------------------------------------------
+\begin{document}
+% ---------------------------------------------------------------------------------------------
+
+\title
+    {
+    \begin{Huge}Distributed Compilation Using \textit{DistCC} \\ \vspace{.5 cm} version 2.18.3 \end{Huge}
+    \\ \vspace{1 cm}
+    \center{ \includegraphics[width=7cm]{distcc-logo.jpg}}
+    \\ \vspace{2 cm}
+    \begin{normalsize}Document version 1.0\end{normalsize}
+    }
+\date{\today}
+
+\pdfbookmark{Title}{title}%
+\draftstring{}%
+\watermarkgraphic{frontpage-a4.pdf}%
+\watermark%
+\maketitle%
+
+\watermarkgraphic{}%
+\watermark%
+\draftstring{Draft}%
+\draftfontsize{150}%
+
+% ---------------------------------------------------------------------------------------------
+
+\pdfbookmark{Table of Contents}
+{tableofcontents}%
+\tableofcontents%
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{Introduction}
+
+\section{Rationale}
+\section{Concepts}
+\subsection{Hosts}
+% selection of hosts
+% no coordinator
+\subsection{Slots}
+\subsection{Jobs}
+\subsection{Types of Distribution}
+% utilizing Windows Server DFS
+
+% ---------------------------------------------------------------------------------------------
+
+\chapter{DistCC within NBU Build Environment}
+
+\section{Operation with ClearCASE}
+\subsection{Compilation from snapshot views}
+\subsection{Compilation from dynamic views}
+% overloading the client
+\section{Operation from Freemason}
+\section{GNU Make Modifications}
+\section{Configuration}
+
+% ---------------------------------------------------------------------------------------------
+\chapter{Reference}
+
+\section{Environment Variables}
+\section{DistCC options}
+
+% ----------------------------------------------------------------
+\appendix
+\chapter{Methods for Speeding Up Compilation}
+
+% ----------------------------------------------------------------
+\end{document}
+% ----------------------------------------------------------------

@@ -1,0 +1,7 @@
+
+namespace rvfc
+{
+
+class text;
+
+}

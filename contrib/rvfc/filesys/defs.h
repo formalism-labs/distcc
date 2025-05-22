@@ -1,0 +1,14 @@
+
+#ifndef _rvfc_filesys_defs_
+#define _rvfc_filesys_defs_
+
+///////////////////////////////////////////////////////////////////////////////
+
+#include "rvfc/filesys/directory.h"
+#include "rvfc/filesys/file.h"
+#include "rvfc/filesys/filename.h"
+// #include "rvfc/filesys/open-file.h"
+
+///////////////////////////////////////////////////////////////////////////////
+
+#endif // _rvfc_filesys_defs_

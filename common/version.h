@@ -1,0 +1,6 @@
+
+#define _STRINGIFY(x) #x
+#define STRINGIFY(x) _STRINGIFY(x)
+
+#define PACKAGE_VERSION	"2.18.3-rv" STRINGIFY(PACKAGE_BUILD)
+#define PACKAGE_BUILD	2
