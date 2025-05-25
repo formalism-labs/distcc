@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/formalism-labs/distcc)
+
 <p align="center">
   <img src="docs/distcc-logo.jpg" alt="Logo" />
 </p>
